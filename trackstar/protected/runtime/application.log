@@ -1,0 +1,266 @@
+2014/02/08 07:22:19 [error] [system.db.CDbCommand] Error in preparing SQL: CREATE TABLE 'tbl_project' (
+	"id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	"name" varchar(255) NOT NULL,
+	"description" text NOT NULL,
+	"create_time" datetime DEFAULT NULL,
+	"create_user_id" int(11) DEFAULT NULL,
+	"update_time" datetime DEFAULT NULL,
+	"update_user_id" int(11) DEFAULT NULL
+) ENGINE=InnoDB
+2014/02/08 07:22:19 [error] [system.db.CDbCommand] CDbCommand::execute() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 near "ENGINE": syntax error. The SQL statement executed was: CREATE TABLE 'tbl_project' (
+	"id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	"name" varchar(255) NOT NULL,
+	"description" text NOT NULL,
+	"create_time" datetime DEFAULT NULL,
+	"create_user_id" int(11) DEFAULT NULL,
+	"update_time" datetime DEFAULT NULL,
+	"update_user_id" int(11) DEFAULT NULL
+) ENGINE=InnoDB.
+2014/02/08 07:22:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 near "ENGINE": syntax error. The SQL statement executed was: CREATE TABLE 'tbl_project' (
+	"id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	"name" varchar(255) NOT NULL,
+	"description" text NOT NULL,
+	"create_time" datetime DEFAULT NULL,
+	"create_user_id" int(11) DEFAULT NULL,
+	"update_time" datetime DEFAULT NULL,
+	"update_user_id" int(11) DEFAULT NULL
+) ENGINE=InnoDB' in D:\yii-1.1.14.f0fee9\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\yii-1.1.14.f0fee9\framework\db\CDbCommand.php(1324): CDbCommand->execute()
+#1 D:\yii-1.1.14.f0fee9\framework\db\CDbMigration.php(233): CDbCommand->createTable('tbl_project', Array, 'ENGINE=InnoDB')
+#2 C:\wamp\www\trackstar\protected\migrations\m140208_071511_create_project_table.php(15): CDbMigration->createTable('tbl_project', Array, 'ENGINE=InnoDB')
+#3 D:\yii-1.1.14.f0fee9\framework\cli\commands\MigrateCommand.php(385): m140208_071511_create_project_table->up()
+#4 D:\yii-1.1.14.f0fee9\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m140208_071511_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 D:\yii-1.1.14.f0fee9\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 D:\yii-1.1.14.f0fee9\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 D:\yii-1.1.14.f0fee9\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 D:\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CConsoleApplication->processRequest()
+#10 D:\yii-1.1.14.f0fee9\framework\yiic.php(33): CApplication->run()
+#11 C:\wamp\www\trackstar\protected\yiic.php(7): require_once('D:\yii-1.1.14.f...')
+#12 {main}
+---
+2014/02/08 07:23:55 [error] [system.db.CDbCommand] Error in preparing SQL: CREATE TABLE 'tbl_project' (
+	"id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	"name" varchar(255) NOT NULL,
+	"description" text NOT NULL,
+	"create_time" datetime DEFAULT NULL,
+	"create_user_id" int(11) DEFAULT NULL,
+	"update_time" datetime DEFAULT NULL,
+	"update_user_id" int(11) DEFAULT NULL
+) ENGINE=InnoDB
+2014/02/08 07:23:55 [error] [system.db.CDbCommand] CDbCommand::execute() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 near "ENGINE": syntax error. The SQL statement executed was: CREATE TABLE 'tbl_project' (
+	"id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	"name" varchar(255) NOT NULL,
+	"description" text NOT NULL,
+	"create_time" datetime DEFAULT NULL,
+	"create_user_id" int(11) DEFAULT NULL,
+	"update_time" datetime DEFAULT NULL,
+	"update_user_id" int(11) DEFAULT NULL
+) ENGINE=InnoDB.
+2014/02/08 07:23:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 near "ENGINE": syntax error. The SQL statement executed was: CREATE TABLE 'tbl_project' (
+	"id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	"name" varchar(255) NOT NULL,
+	"description" text NOT NULL,
+	"create_time" datetime DEFAULT NULL,
+	"create_user_id" int(11) DEFAULT NULL,
+	"update_time" datetime DEFAULT NULL,
+	"update_user_id" int(11) DEFAULT NULL
+) ENGINE=InnoDB' in D:\yii-1.1.14.f0fee9\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\yii-1.1.14.f0fee9\framework\db\CDbCommand.php(1324): CDbCommand->execute()
+#1 D:\yii-1.1.14.f0fee9\framework\db\CDbMigration.php(233): CDbCommand->createTable('tbl_project', Array, 'ENGINE=InnoDB')
+#2 C:\wamp\www\trackstar\protected\migrations\m140208_071511_create_project_table.php(15): CDbMigration->createTable('tbl_project', Array, 'ENGINE=InnoDB')
+#3 D:\yii-1.1.14.f0fee9\framework\cli\commands\MigrateCommand.php(385): m140208_071511_create_project_table->up()
+#4 D:\yii-1.1.14.f0fee9\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m140208_071511_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 D:\yii-1.1.14.f0fee9\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 D:\yii-1.1.14.f0fee9\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 D:\yii-1.1.14.f0fee9\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 D:\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CConsoleApplication->processRequest()
+#10 D:\yii-1.1.14.f0fee9\framework\yiic.php(33): CApplication->run()
+#11 C:\wamp\www\trackstar\protected\yiic.php(7): require_once('D:\yii-1.1.14.f...')
+#12 {main}
+---
+2014/02/08 07:30:05 [error] [system.db.CDbCommand] Error in preparing SQL: CREATE TABLE 'tbl_project' (
+	"id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	"name" varchar(255) NOT NULL,
+	"description" text NOT NULL,
+	"create_time" datetime DEFAULT NULL,
+	"create_user_id" int(11) DEFAULT NULL,
+	"update_time" datetime DEFAULT NULL,
+	"update_user_id" int(11) DEFAULT NULL
+) ENGINE=InnoDB
+2014/02/08 07:30:05 [error] [system.db.CDbCommand] CDbCommand::execute() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 near "ENGINE": syntax error. The SQL statement executed was: CREATE TABLE 'tbl_project' (
+	"id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	"name" varchar(255) NOT NULL,
+	"description" text NOT NULL,
+	"create_time" datetime DEFAULT NULL,
+	"create_user_id" int(11) DEFAULT NULL,
+	"update_time" datetime DEFAULT NULL,
+	"update_user_id" int(11) DEFAULT NULL
+) ENGINE=InnoDB.
+2014/02/08 07:30:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 near "ENGINE": syntax error. The SQL statement executed was: CREATE TABLE 'tbl_project' (
+	"id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	"name" varchar(255) NOT NULL,
+	"description" text NOT NULL,
+	"create_time" datetime DEFAULT NULL,
+	"create_user_id" int(11) DEFAULT NULL,
+	"update_time" datetime DEFAULT NULL,
+	"update_user_id" int(11) DEFAULT NULL
+) ENGINE=InnoDB' in D:\yii-1.1.14.f0fee9\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\yii-1.1.14.f0fee9\framework\db\CDbCommand.php(1324): CDbCommand->execute()
+#1 D:\yii-1.1.14.f0fee9\framework\db\CDbMigration.php(233): CDbCommand->createTable('tbl_project', Array, 'ENGINE=InnoDB')
+#2 C:\wamp\www\trackstar\protected\migrations\m140208_071511_create_project_table.php(15): CDbMigration->createTable('tbl_project', Array, 'ENGINE=InnoDB')
+#3 D:\yii-1.1.14.f0fee9\framework\cli\commands\MigrateCommand.php(385): m140208_071511_create_project_table->up()
+#4 D:\yii-1.1.14.f0fee9\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m140208_071511_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 D:\yii-1.1.14.f0fee9\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 D:\yii-1.1.14.f0fee9\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 D:\yii-1.1.14.f0fee9\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 D:\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CConsoleApplication->processRequest()
+#10 D:\yii-1.1.14.f0fee9\framework\yiic.php(33): CApplication->run()
+#11 C:\wamp\www\trackstar\protected\yiic.php(7): require_once('D:\yii-1.1.14.f...')
+#12 {main}
+---
+2014/02/08 08:02:11 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trackstar.project' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `project`.
+in C:\wamp\www\trackstar\index.php (13)
+2014/02/08 08:42:46 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trackstar.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2014/02/08 09:04:10 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trackstar.project' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `project`.
+in C:\wamp\www\trackstar\index.php (13)
+2014/02/08 09:04:18 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trackstar.project' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `project`.
+in C:\wamp\www\trackstar\index.php (13)
+2014/02/08 09:52:46 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trackstar.project_user_assignment' doesn't exist. The SQL statement executed was: TRUNCATE TABLE `project_user_assignment`.
+2014/02/08 09:58:56 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trackstar.tbl_project_user_assignment' doesn't exist. The SQL statement executed was: TRUNCATE TABLE `tbl_project_user_assignment`.
+2014/02/08 10:00:26 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1072 Key column 'project_
+        id' doesn't exist in table. The SQL statement executed was: ALTER TABLE `tbl_issue` ADD CONSTRAINT `fk_issue_project` FOREIGN KEY (`project_
+        id`) REFERENCES `tbl_project` (`id`) ON DELETE CASCADE ON UPDATE RESTRICT.
+2014/02/10 00:12:59 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1017 Can't find file: '.\trackstar\tbl_project_user_@000a@0020@0020@0020@0020@0020@0020@0020@0020assignment.frm' (errno: 22). The SQL statement executed was: ALTER TABLE `tbl_project_user_
+        assignment` ADD CONSTRAINT `fk_user_project` FOREIGN KEY (`user_id`) REFERENCES `tbl_user` (`id`) ON DELETE CASCADE ON UPDATE RESTRICT.
+2014/02/10 01:06:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in C:\wamp\www\trackstar\protected\controllers\IssueController.php:217
+Stack trace:
+#0 D:\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\yii-1.1.14.f0fee9\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\yii-1.1.14.f0fee9\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\yii-1.1.14.f0fee9\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('create')
+#9 D:\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 D:\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/create
+HTTP_REFERER=http://localhost/trackstar/index.php?r=issue/
+---
+2014/02/10 01:06:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in C:\wamp\www\trackstar\protected\controllers\IssueController.php:217
+Stack trace:
+#0 D:\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\yii-1.1.14.f0fee9\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\yii-1.1.14.f0fee9\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\yii-1.1.14.f0fee9\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('create')
+#9 D:\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 D:\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/create
+HTTP_REFERER=http://localhost/trackstar/index.php?r=issue/
+---
+2014/02/10 01:13:23 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in C:\wamp\www\trackstar\protected\controllers\IssueController.php:217
+Stack trace:
+#0 D:\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\yii-1.1.14.f0fee9\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\yii-1.1.14.f0fee9\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\yii-1.1.14.f0fee9\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('create')
+#9 D:\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 D:\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/create
+HTTP_REFERER=http://localhost/trackstar/index.php?r=issue/
+---
+2014/02/10 01:13:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in C:\wamp\www\trackstar\protected\controllers\IssueController.php:217
+Stack trace:
+#0 D:\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\yii-1.1.14.f0fee9\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\yii-1.1.14.f0fee9\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\yii-1.1.14.f0fee9\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('create')
+#9 D:\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 D:\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/create
+HTTP_REFERER=http://localhost/trackstar/index.php?r=issue/
+---
+2014/02/10 01:13:27 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in C:\wamp\www\trackstar\protected\controllers\IssueController.php:217
+Stack trace:
+#0 D:\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\yii-1.1.14.f0fee9\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\yii-1.1.14.f0fee9\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\yii-1.1.14.f0fee9\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('create')
+#9 D:\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 D:\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/create
+HTTP_REFERER=http://localhost/trackstar/index.php?r=issue/
+---
+2014/02/10 01:55:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in C:\wamp\www\trackstar\protected\controllers\IssueController.php:218
+Stack trace:
+#0 D:\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\yii-1.1.14.f0fee9\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\yii-1.1.14.f0fee9\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\yii-1.1.14.f0fee9\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('create')
+#9 D:\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 D:\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/create
+HTTP_REFERER=http://localhost/trackstar/index.php?r=issue/
+---
+2014/02/10 11:21:01 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in C:\wamp\www\trackstar\protected\controllers\IssueController.php:218
+Stack trace:
+#0 D:\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\yii-1.1.14.f0fee9\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\yii-1.1.14.f0fee9\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\yii-1.1.14.f0fee9\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('create')
+#9 D:\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/create')
+#10 D:\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\trackstar\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/create
+HTTP_REFERER=http://localhost/trackstar/index.php?r=issue/admin
+---
