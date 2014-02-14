@@ -1,0 +1,7 @@
+.settings/
+.buildpath
+.project
+.htaccess
+/assets/*
+/protected/runtime/*
+
